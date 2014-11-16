@@ -44,7 +44,6 @@
     [self.navigationItem setRightBarButtonItem:rightBarButton];
     
     
-    //self.navigationController.navigationBar.backgroundColor=[UIColor redColor];
     
     self.tableData = [[NSMutableArray alloc] init];
     
@@ -72,7 +71,8 @@
     ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, &error);
     __block BOOL accessGranted = NO;
     
-    if (ABAddressBookRequestAccessWithCompletion != NULL) { // we're on iOS 6
+    // >= iOS 6
+    if (ABAddressBookRequestAccessWithCompletion != NULL) {
         // Semaphore is used for blocking until response
         dispatch_semaphore_t sema = dispatch_semaphore_create(0);
         
@@ -91,9 +91,6 @@
         NSLog(@"IOS5");
     }
 
-    
-    
-    
     if (addressBook != nil && accessGranted)
     {
         NSLog(@"Succesful.");

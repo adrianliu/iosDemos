@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E99717F2-0CC5-4D26-99F6-DC7044560E88</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AddressBookDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D24CD735635EDD6376691C8A335B8A3CE7DDEE2F</key>
+		<string>https://github.com/adrianliu/iosDemos.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AddressBookDemo/AddressBookDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D24CD735635EDD6376691C8A335B8A3CE7DDEE2F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/adrianliu/iosDemos.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D24CD735635EDD6376691C8A335B8A3CE7DDEE2F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D24CD735635EDD6376691C8A335B8A3CE7DDEE2F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iosDemos</string>
+		</dict>
+	</array>
+</dict>
+</plist>
