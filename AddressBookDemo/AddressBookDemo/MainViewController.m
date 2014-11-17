@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.alView=[[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.alView.backgroundColor=[UIColor redColor];
+    [self.view addSubview:self.alView];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,7 +43,47 @@
     UINavigationController *navController=[[UINavigationController alloc] initWithRootViewController:contactViewController];
     [self presentModalViewController:navController animated:YES];
 }
+
+
+-(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        //code
+        [self.alView removeFromSuperview];
+        NSLog(@"width is: %f",size.width);
+        NSLog(@"height is: %f",size.height);
+        self.alView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
+        self.alView.backgroundColor=[UIColor yellowColor];
+        [self.view addSubview:self.alView];
+
+    } completion:nil];
+    
+}
+
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

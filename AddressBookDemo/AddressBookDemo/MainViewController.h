@@ -10,6 +10,8 @@
 #import "ViewController.h"
 
 @interface MainViewController : UIViewController
+
+@property (nonatomic,strong) UIView *alView;
 - (IBAction)showContacts:(id)sender;
 
 @end
